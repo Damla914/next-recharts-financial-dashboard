@@ -236,51 +236,6 @@ The project should pass TypeScript checking, linting, and production build witho
 
 ---
 
-## ✅ Task Requirements
-
-The implementation covers the main requirements of the dashboard task:
-
-* [x] Next.js 16 with App Router
-* [x] TypeScript
-* [x] Tailwind CSS
-* [x] shadcn/ui
-* [x] Recharts
-* [x] Dummy JSON datasets
-* [x] TypeScript domain models
-* [x] Line Chart
-* [x] Bar Chart
-* [x] Pie Chart
-* [x] Radar Chart
-* [x] shadcn/ui Card structure
-* [x] Responsive dashboard layout
-* [x] Responsive charts with `ResponsiveContainer`
-* [x] Tooltip and legend support
-* [x] Type-safe implementation
-* [x] No `any` usage
-* [x] Production build verification
-* [x] ESLint and TypeScript checks
-
----
-
-## 🔮 Future Improvements
-
-This project is intentionally limited to the frontend and dummy data layer.
-
-Future development phases can extend the dashboard with:
-
-* PostgreSQL
-* Prisma ORM
-* REST/API data sources
-* Authentication with better-auth
-* CRUD operations
-* Real risk score calculation
-* Server Actions
-* TanStack Query
-
-These features are outside the scope of the current task and are intentionally not included.
-
----
-
 ## 📄 License
 
 This project is open-source and available under the MIT License.
