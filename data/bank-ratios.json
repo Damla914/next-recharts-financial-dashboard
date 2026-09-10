@@ -1,0 +1,7 @@
+[
+  { "year": 2020, "roa": 1.45, "roe": 14.2, "capitalAdequacy": 18.5, "nplRatio": 4.2 },
+  { "year": 2021, "roa": 1.62, "roe": 16.8, "capitalAdequacy": 17.9, "nplRatio": 3.6 },
+  { "year": 2022, "roa": 2.10, "roe": 22.4, "capitalAdequacy": 19.1, "nplRatio": 2.8 },
+  { "year": 2023, "roa": 2.35, "roe": 24.1, "capitalAdequacy": 18.2, "nplRatio": 2.1 },
+  { "year": 2024, "roa": 2.15, "roe": 21.8, "capitalAdequacy": 18.8, "nplRatio": 1.9 }
+]

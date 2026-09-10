@@ -1,0 +1,61 @@
+[
+  { "id": "tr-2020", "countryName": "Turkey", "countryCode": "TR", "year": 2020, "totalScore": 68.4, "economicScore": 64.2, "politicalScore": 72.6, "rating": "BB" },
+  { "id": "tr-2021", "countryName": "Turkey", "countryCode": "TR", "year": 2021, "totalScore": 66.1, "economicScore": 61.5, "politicalScore": 70.7, "rating": "BB" },
+  { "id": "tr-2022", "countryName": "Turkey", "countryCode": "TR", "year": 2022, "totalScore": 63.8, "economicScore": 58.0, "politicalScore": 69.6, "rating": "B" },
+  { "id": "tr-2023", "countryName": "Turkey", "countryCode": "TR", "year": 2023, "totalScore": 65.5, "economicScore": 60.8, "politicalScore": 70.2, "rating": "B" },
+  { "id": "tr-2024", "countryName": "Turkey", "countryCode": "TR", "year": 2024, "totalScore": 69.2, "economicScore": 66.0, "politicalScore": 72.4, "rating": "BB" },
+
+  { "id": "de-2020", "countryName": "Germany", "countryCode": "DE", "year": 2020, "totalScore": 92.5, "economicScore": 94.0, "politicalScore": 91.0, "rating": "AAA" },
+  { "id": "de-2021", "countryName": "Germany", "countryCode": "DE", "year": 2021, "totalScore": 91.8, "economicScore": 92.8, "politicalScore": 90.8, "rating": "AAA" },
+  { "id": "de-2022", "countryName": "Germany", "countryCode": "DE", "year": 2022, "totalScore": 89.4, "economicScore": 88.5, "politicalScore": 90.3, "rating": "AAA" },
+  { "id": "de-2023", "countryName": "Germany", "countryCode": "DE", "year": 2023, "totalScore": 90.1, "economicScore": 89.2, "politicalScore": 91.0, "rating": "AAA" },
+  { "id": "de-2024", "countryName": "Germany", "countryCode": "DE", "year": 2024, "totalScore": 91.0, "economicScore": 90.5, "politicalScore": 91.5, "rating": "AAA" },
+
+  { "id": "us-2020", "countryName": "United States", "countryCode": "US", "year": 2020, "totalScore": 88.0, "economicScore": 91.2, "politicalScore": 84.8, "rating": "AA" },
+  { "id": "us-2021", "countryName": "United States", "countryCode": "US", "year": 2021, "totalScore": 89.5, "economicScore": 93.0, "politicalScore": 86.0, "rating": "AA" },
+  { "id": "us-2022", "countryName": "United States", "countryCode": "US", "year": 2022, "totalScore": 87.2, "economicScore": 89.8, "politicalScore": 84.6, "rating": "AA" },
+  { "id": "us-2023", "countryName": "United States", "countryCode": "US", "year": 2023, "totalScore": 88.1, "economicScore": 90.5, "politicalScore": 85.7, "rating": "AA" },
+  { "id": "us-2024", "countryName": "United States", "countryCode": "US", "year": 2024, "totalScore": 89.0, "economicScore": 91.8, "politicalScore": 86.2, "rating": "AA" },
+
+  { "id": "gb-2020", "countryName": "United Kingdom", "countryCode": "GB", "year": 2020, "totalScore": 85.0, "economicScore": 86.5, "politicalScore": 83.5, "rating": "AA" },
+  { "id": "gb-2021", "countryName": "United Kingdom", "countryCode": "GB", "year": 2021, "totalScore": 85.8, "economicScore": 87.0, "politicalScore": 84.6, "rating": "AA" },
+  { "id": "gb-2022", "countryName": "United Kingdom", "countryCode": "GB", "year": 2022, "totalScore": 84.2, "economicScore": 85.1, "politicalScore": 83.3, "rating": "AA" },
+  { "id": "gb-2023", "countryName": "United Kingdom", "countryCode": "GB", "year": 2023, "totalScore": 85.5, "economicScore": 86.2, "politicalScore": 84.8, "rating": "AA" },
+  { "id": "gb-2024", "countryName": "United Kingdom", "countryCode": "GB", "year": 2024, "totalScore": 86.2, "economicScore": 87.1, "politicalScore": 85.3, "rating": "AA" },
+
+  { "id": "jp-2020", "countryName": "Japan", "countryCode": "JP", "year": 2020, "totalScore": 87.4, "economicScore": 88.0, "politicalScore": 86.8, "rating": "A" },
+  { "id": "jp-2021", "countryName": "Japan", "countryCode": "JP", "year": 2021, "totalScore": 87.9, "economicScore": 88.5, "politicalScore": 87.3, "rating": "A" },
+  { "id": "jp-2022", "countryName": "Japan", "countryCode": "JP", "year": 2022, "totalScore": 86.5, "economicScore": 87.1, "politicalScore": 85.9, "rating": "A" },
+  { "id": "jp-2023", "countryName": "Japan", "countryCode": "JP", "year": 2023, "totalScore": 87.2, "economicScore": 88.0, "politicalScore": 86.4, "rating": "A" },
+  { "id": "jp-2024", "countryName": "Japan", "countryCode": "JP", "year": 2024, "totalScore": 88.1, "economicScore": 89.2, "politicalScore": 87.0, "rating": "A" },
+
+  { "id": "br-2020", "countryName": "Brazil", "countryCode": "BR", "year": 2020, "totalScore": 62.0, "economicScore": 59.5, "politicalScore": 64.5, "rating": "BB" },
+  { "id": "br-2021", "countryName": "Brazil", "countryCode": "BR", "year": 2021, "totalScore": 63.1, "economicScore": 60.8, "politicalScore": 65.4, "rating": "BB" },
+  { "id": "br-2022", "countryName": "Brazil", "countryCode": "BR", "year": 2022, "totalScore": 61.5, "economicScore": 58.7, "politicalScore": 64.3, "rating": "BB" },
+  { "id": "br-2023", "countryName": "Brazil", "countryCode": "BR", "year": 2023, "totalScore": 64.0, "economicScore": 62.1, "politicalScore": 65.9, "rating": "BB" },
+  { "id": "br-2024", "countryName": "Brazil", "countryCode": "BR", "year": 2024, "totalScore": 65.4, "economicScore": 63.8, "politicalScore": 67.0, "rating": "BB" },
+
+  { "id": "in-2020", "countryName": "India", "countryCode": "IN", "year": 2020, "totalScore": 66.8, "economicScore": 68.2, "politicalScore": 65.4, "rating": "BBB" },
+  { "id": "in-2021", "countryName": "India", "countryCode": "IN", "year": 2021, "totalScore": 68.4, "economicScore": 70.5, "politicalScore": 66.3, "rating": "BBB" },
+  { "id": "in-2022", "countryName": "India", "countryCode": "IN", "year": 2022, "totalScore": 69.5, "economicScore": 72.1, "politicalScore": 66.9, "rating": "BBB" },
+  { "id": "in-2023", "countryName": "India", "countryCode": "IN", "year": 2023, "totalScore": 70.8, "economicScore": 73.8, "politicalScore": 67.8, "rating": "BBB" },
+  { "id": "in-2024", "countryName": "India", "countryCode": "IN", "year": 2024, "totalScore": 72.1, "economicScore": 75.6, "politicalScore": 68.6, "rating": "BBB" },
+
+  { "id": "za-2020", "countryName": "South Africa", "countryCode": "ZA", "year": 2020, "totalScore": 58.2, "economicScore": 55.0, "politicalScore": 61.4, "rating": "BB" },
+  { "id": "za-2021", "countryName": "South Africa", "countryCode": "ZA", "year": 2021, "totalScore": 57.8, "economicScore": 54.2, "politicalScore": 61.4, "rating": "BB" },
+  { "id": "za-2022", "countryName": "South Africa", "countryCode": "ZA", "year": 2022, "totalScore": 56.1, "economicScore": 52.5, "politicalScore": 59.7, "rating": "BB" },
+  { "id": "za-2023", "countryName": "South Africa", "countryCode": "ZA", "year": 2023, "totalScore": 56.5, "economicScore": 53.0, "politicalScore": 60.0, "rating": "BB" },
+  { "id": "za-2024", "countryName": "South Africa", "countryCode": "ZA", "year": 2024, "totalScore": 57.0, "economicScore": 53.8, "politicalScore": 60.2, "rating": "BB" },
+
+  { "id": "sg-2020", "countryName": "Singapore", "countryCode": "SG", "year": 2020, "totalScore": 94.1, "economicScore": 96.0, "politicalScore": 92.2, "rating": "AAA" },
+  { "id": "sg-2021", "countryName": "Singapore", "countryCode": "SG", "year": 2021, "totalScore": 94.8, "economicScore": 96.5, "politicalScore": 93.1, "rating": "AAA" },
+  { "id": "sg-2022", "countryName": "Singapore", "countryCode": "SG", "year": 2022, "totalScore": 93.9, "economicScore": 95.8, "politicalScore": 92.0, "rating": "AAA" },
+  { "id": "sg-2023", "countryName": "Singapore", "countryCode": "SG", "year": 2023, "totalScore": 94.7, "economicScore": 96.3, "politicalScore": 93.1, "rating": "AAA" },
+  { "id": "sg-2024", "countryName": "Singapore", "countryCode": "SG", "year": 2024, "totalScore": 95.3, "economicScore": 97.1, "politicalScore": 93.5, "rating": "AAA" },
+
+  { "id": "gr-2020", "countryName": "Greece", "countryCode": "GR", "year": 2020, "totalScore": 64.0, "economicScore": 61.0, "politicalScore": 67.0, "rating": "BB" },
+  { "id": "gr-2021", "countryName": "Greece", "countryCode": "GR", "year": 2021, "totalScore": 66.2, "economicScore": 63.8, "politicalScore": 68.6, "rating": "BB" },
+  { "id": "gr-2022", "countryName": "Greece", "countryCode": "GR", "year": 2022, "totalScore": 68.0, "economicScore": 66.1, "politicalScore": 69.9, "rating": "BBB" },
+  { "id": "gr-2023", "countryName": "Greece", "countryCode": "GR", "year": 2023, "totalScore": 69.8, "economicScore": 68.2, "politicalScore": 71.4, "rating": "BBB" },
+  { "id": "gr-2024", "countryName": "Greece", "countryCode": "GR", "year": 2024, "totalScore": 71.5, "economicScore": 70.2, "politicalScore": 72.8, "rating": "BBB" }
+]

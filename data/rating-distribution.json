@@ -1,0 +1,9 @@
+[
+  { "rating": "AAA", "count": 2},
+  { "rating": "AA", "count": 4},
+  { "rating": "A", "count": 7},
+  { "rating": "BBB", "count": 12},
+  { "rating": "BB", "count": 5},
+  { "rating": "B", "count": 2},
+  { "rating": "CCC", "count": 1 }
+]

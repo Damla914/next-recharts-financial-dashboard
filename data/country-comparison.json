@@ -1,0 +1,7 @@
+[
+  { "dimension": "Economic", "TR": 66, "DE": 90, "US": 86, "IN": 76 },
+  { "dimension": "Political", "TR": 72, "DE": 91, "US": 86, "IN": 69 },
+  { "dimension": "Financial", "TR": 68, "DE": 94, "US": 90, "IN": 71 },
+  { "dimension": "Social", "TR": 70, "DE": 88, "US": 82, "IN": 63 },
+  { "dimension": "Governance", "TR": 64, "DE": 93, "US": 80, "IN": 65 }
+]
