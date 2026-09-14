@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model CountryScore {
+  id             Int    @id @default(autoincrement())
+  countryName    String
+  year           Int
+  totalScore     Float
+  economicScore  Float
+  politicalScore Float
+  rating         String
+}
+
+model BankRatio {
+  id              Int   @id @default(autoincrement())
+  year            Int
+  roa             Float
+  roe             Float
+  capitalAdequacy Float
+  nplRatio        Float
+}
+
+model RatingDistribution {
+  id     Int    @id @default(autoincrement())
+  rating String
+  count  Int
+}
+
+model CountryComparison {
+  id        Int    @id @default(autoincrement())
+  dimension String
+  TR        Float
+  US        Float
+  DE        Float
+  IN        Float
+}
