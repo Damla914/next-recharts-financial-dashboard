@@ -33,10 +33,10 @@ model RatingDistribution {
 }
 
 model CountryComparison {
-  id        Int    @id @default(autoincrement())
-  dimension String
-  TR        Float
-  US        Float
-  DE        Float
-  IN        Float
+  id          Int    @id @default(autoincrement())
+  dimension   String
+  countryCode String
+  score       Float
+
+  @@unique([dimension, countryCode])
 }
