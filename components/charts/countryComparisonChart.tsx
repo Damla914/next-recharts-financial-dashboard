@@ -3,6 +3,7 @@
 import React from 'react';
 import { ResponsiveContainer, RadarChart, PolarAngleAxis, PolarGrid, Radar, Tooltip, Legend } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import Link from 'next/link';
 
 interface CountryComparisonChartsProps {
   data: any[];
@@ -13,7 +14,9 @@ const CountryComparisonCharts = ({data}: CountryComparisonChartsProps) => {
     <Card className="bg-white backdrop-blur-md shadow-lg rounded-xl border border-gray-200">
       <CardHeader>
         <CardTitle className="text-xl font-bold text-gray-800 text-center md:text-left">
-          Country Comparison
+          <Link href = '/country-comparison' className='hover:text-gray-400 transition-colors cursor-pointer'>
+             Country Comparison
+          </Link>
         </CardTitle>
       </CardHeader>
       <CardContent className="h-64 md:h-80">

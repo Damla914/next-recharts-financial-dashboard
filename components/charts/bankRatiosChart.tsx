@@ -3,6 +3,7 @@
 import React from 'react';
 import { BarChart, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import Link from 'next/link';
 
 interface BankRatiosChartProps {
   data: any[];
@@ -12,7 +13,11 @@ const BankRatiosChart = ({data}: BankRatiosChartProps) => {
     return(
         <Card className="bg-white backdrop-blur-md shadow-lg rounded-xl p-4 md:p-6 border border-gray-200  mx-2 md:mx-0">
             <CardHeader>
-              <CardTitle className = "text-xl font-bold text-gray-800 text-center md:text-left">Bank ROA/ROE Comparison</CardTitle>
+              <CardTitle className = "text-xl font-bold text-gray-800 text-center md:text-left">
+                <Link href = '/bank-ratios' className='hover:text-gray-400 transition-colors cursor-pointer'>
+                  Bank ROA/ROE Comparison
+                </Link>
+              </CardTitle>
             </CardHeader>
             <CardContent className = "h-64 md:h-80">
                 <ResponsiveContainer width="100%" height="100%">
