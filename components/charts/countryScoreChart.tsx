@@ -1,31 +1,14 @@
 'use client'
 
 import React from 'react';
-import countriesData from '@/data/countries.json';
 import { CartesianGrid, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Line, Legend } from 'recharts';
-import { CountryScore } from '@/types/country';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
+interface CountryScoreChartProps {
+  data: any[];
+}
 
-const countries = countriesData as CountryScore[];
-const years = [2020, 2021, 2022, 2023, 2024];
-
-const formattedData = years.map((year) => {
-  const tr = countries.find((c) => c.countryCode === 'TR' && c.year === year);
-  const de = countries.find((c) => c.countryCode === 'DE' && c.year === year);
-  const ja = countries.find((c) => c.countryCode === 'JP' && c.year === year);
-  const gr = countries.find((c) => c.countryCode === 'GR' && c.year === year);
-
-  return {
-    year,
-    TR: tr?.totalScore || 0,
-    DE: de?.totalScore || 0,
-    JP: ja?.totalScore || 0,
-    GR: gr?.totalScore || 0,
-  };
-});
-
-const CountryScoreChart = () => {
+const CountryScoreChart = ({data = []}: CountryScoreChartProps) => {
     return(
         <Card className="bg-white backdrop-blur-md shadow-lg rounded-xl p-4 md:p-6 border border-gray-200  mx-2 md:mx-0">
             <CardHeader>
@@ -33,7 +16,7 @@ const CountryScoreChart = () => {
             </CardHeader>
             <CardContent className = "h-64 md:h-80">
                 <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data = {formattedData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
+                    <LineChart data = {data} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f99a"/>
                         <XAxis dataKey="year" stroke="#111827" tick={{ fontSize: 12 }} interval="preserveStartEnd" />
                         <YAxis stroke="#111827" tick={{ fontSize: 12 }} width={40} domain={[50, 100]} />

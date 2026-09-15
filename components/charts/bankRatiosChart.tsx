@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-import bankRatiosData from '@/data/bank-ratios.json';
-import {BankRatio} from "@/types/bank";
 import { BarChart, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
-const bankRatios = bankRatiosData as BankRatio[];
+interface BankRatiosChartProps {
+  data: any[];
+}
 
-const BankRatiosChart = () => {
+const BankRatiosChart = ({data}: BankRatiosChartProps) => {
     return(
         <Card className="bg-white backdrop-blur-md shadow-lg rounded-xl p-4 md:p-6 border border-gray-200  mx-2 md:mx-0">
             <CardHeader>
@@ -16,7 +16,7 @@ const BankRatiosChart = () => {
             </CardHeader>
             <CardContent className = "h-64 md:h-80">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={bankRatios} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
+                  <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9"/>
                     <XAxis dataKey="year" stroke="#111827" tick={{ fontSize: 12 }} interval="preserveStartEnd" />
                     <YAxis stroke="#111827" tick={{ fontSize: 12 }} width={40} domain={[0, 20]} />

@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { ResponsiveContainer, RadarChart, PolarAngleAxis, PolarGrid, Radar, Tooltip, Legend } from 'recharts';
-import countryComparisonData from '@/data/country-comparison.json';
-import { CountryComparison } from "@/types/country";
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
-const data = countryComparisonData as CountryComparison[];
+interface CountryComparisonChartsProps {
+  data: any[];
+}
 
-const CountryComparisonCharts = () => {
+const CountryComparisonCharts = ({data}: CountryComparisonChartsProps) => {
   return (
     <Card className="bg-white backdrop-blur-md shadow-lg rounded-xl border border-gray-200">
       <CardHeader>

@@ -11,7 +11,6 @@ async function main() {
   await prisma.ratingDistribution.deleteMany();
   await prisma.countryComparison.deleteMany();
 
-  // 2. Country Scores Seed
   const countriesPath = path.join(process.cwd(), 'data', 'countries.json');
   if (fs.existsSync(countriesPath)) {
     const countriesData = JSON.parse(fs.readFileSync(countriesPath, 'utf-8'));
@@ -30,7 +29,6 @@ async function main() {
     console.log('Country scores seeded.');
   }
 
-  // 3. Bank Ratios Seed
   const bankRatiosPath = path.join(process.cwd(), 'data', 'bank-ratios.json');
   if (fs.existsSync(bankRatiosPath)) {
     const bankRatiosData = JSON.parse(fs.readFileSync(bankRatiosPath, 'utf-8'));
@@ -48,7 +46,6 @@ async function main() {
     console.log('Bank ratios seeded.');
   }
 
-  // 4. Rating Distributions Seed
   const ratingDistributionsPath = path.join(process.cwd(), 'data', 'rating-distribution.json');
   const ratingPathToUse = fs.existsSync(ratingDistributionsPath) 
     ? ratingDistributionsPath 
@@ -67,7 +64,6 @@ async function main() {
     console.log('Rating distributions seeded.');
   }
 
-  // 5. Country Comparisons 
   const countryComparisonsPath = path.join(process.cwd(), 'data', 'country-comparison.json');
   const comparisonPathToUse = fs.existsSync(countryComparisonsPath)
     ? countryComparisonsPath
