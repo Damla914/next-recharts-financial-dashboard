@@ -5,9 +5,7 @@ import fs from 'fs';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Seeding database...');
 
-  // 1. Eski verileri temizle
   await prisma.countryScore.deleteMany();
   await prisma.bankRatio.deleteMany();
   await prisma.ratingDistribution.deleteMany();
@@ -29,7 +27,7 @@ async function main() {
         },
       });
     }
-    console.log('✅ Country scores seeded successfully.');
+    console.log('Country scores seeded.');
   }
 
   // 3. Bank Ratios Seed
@@ -47,11 +45,10 @@ async function main() {
         },
       });
     }
-    console.log('✅ Bank ratios seeded successfully.');
+    console.log('Bank ratios seeded.');
   }
 
   // 4. Rating Distributions Seed
-  // Not: Dosya adının data/ içindeki adıyla birebir tuttuğundan emin ol (rating-distribution.json veya rating-distributions.json)
   const ratingDistributionsPath = path.join(process.cwd(), 'data', 'rating-distribution.json');
   const ratingPathToUse = fs.existsSync(ratingDistributionsPath) 
     ? ratingDistributionsPath 
@@ -67,10 +64,10 @@ async function main() {
         },
       });
     }
-    console.log('✅ Rating distributions seeded successfully.');
+    console.log('Rating distributions seeded.');
   }
 
-  // 5. Country Comparisons (Dinamik Satır Bazlı Seeding)
+  // 5. Country Comparisons 
   const countryComparisonsPath = path.join(process.cwd(), 'data', 'country-comparison.json');
   const comparisonPathToUse = fs.existsSync(countryComparisonsPath)
     ? countryComparisonsPath
@@ -93,15 +90,13 @@ async function main() {
         });
       }
     }
-    console.log('✅ Country comparisons dynamically seeded successfully.');
+    console.log('Country comparisons dynamically seeded.');
   }
-
-  console.log('🚀 Seeding completed!');
 }
 
 main()
   .catch((e) => {
-    console.error('❌ Error during seeding:', e);
+    console.error('Error during seeding:', e);
     process.exit(1);
   })
   .finally(async () => {
