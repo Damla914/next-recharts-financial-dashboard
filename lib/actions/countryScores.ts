@@ -43,7 +43,7 @@ export async function createCountryScore(formData: {
 
         return {success: true, data: newScore }
 
-    }catch(error){
+    } catch(error) {
         console.error('Error creating country scores', error);
         return { success: false, error: 'Failed to create country score' };
     }    
@@ -78,8 +78,25 @@ export async function updateCountryScore(
 
         return {success: true, data: updatedScore }
 
-    }catch(error){
+    } catch(error) {
         console.error('Error updating country scores', error);
         return { success: false, error: 'Failed to update country score' };
+    }    
+}
+
+export async function DeleteCountryScore(id: number) {
+    try{
+        await prisma.countryScore.delete({
+            where: {id},
+        });
+
+        revalidatePath('/country-scores');
+        revalidatePath('/');
+
+        return {success: true}
+
+    } catch(error) {
+        console.error('Error deleting country scores', error);
+        return { success: false, error: 'Failed to delete country score' };
     }    
 }

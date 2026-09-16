@@ -45,7 +45,7 @@ export default function EditScoreModal({item}: {item: countryScoreItem}) {
         if(res.success){
             setIsOpen(false)
         } else {
-                alert('Error Creating Record')
+            alert('Error Editing Record')
         }
     };
     

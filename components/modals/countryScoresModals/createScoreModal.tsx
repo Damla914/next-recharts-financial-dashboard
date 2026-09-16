@@ -154,6 +154,4 @@ export default function CreateScoreModal() {
         )}
       </>
     )
-
-
 }

@@ -1,5 +1,6 @@
 import CreateScoreModal from "@/components/modals/countryScoresModals/createScoreModal";
 import EditScoreModal from "@/components/modals/countryScoresModals/editScoreModal";
+import DeleteScoreModal from "@/components/modals/countryScoresModals/deleteScoreModal";
 import { getAllCountryScores } from "@/lib/actions/countryScores";
 import Link from "next/link";
 
@@ -27,7 +28,7 @@ export default async function CountryScorePage(){
                   <th className="px-6 py-4">Economical</th>
                   <th className="px-6 py-4">Political</th>
                   <th className="px-6 py-4">Rating</th>
-                  <th className="px-6 py-4">Edit</th>
+                  <th className="px-6 py-4">Action</th>
                 </tr>
               </thead>
               <tbody className="divide divide-slate-200">
@@ -41,6 +42,7 @@ export default async function CountryScorePage(){
                     <td className="px-6 py-4 font-semibold text-slate-800">{score.rating}</td>
                     <td className="px-6 py-4 text-center align-middle">
                       <EditScoreModal item={score} />
+                      <DeleteScoreModal item={score} />
                     </td>
                   </tr>
                 ))}
