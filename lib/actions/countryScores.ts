@@ -48,3 +48,38 @@ export async function createCountryScore(formData: {
         return { success: false, error: 'Failed to create country score' };
     }    
 }
+
+export async function updateCountryScore(
+    id: number, 
+    formData: {
+       countryName: string,
+       year: number
+       totalScore: number;
+       economicScore: number;
+       politicalScore: number;
+       rating: string;
+    }
+) {
+    try{
+        const updatedScore = await prisma.countryScore.update({
+            where: {id},
+            data: {
+                countryName: formData.countryName,
+                year: Number(formData.year),
+                totalScore: Number(formData.totalScore),
+                economicScore: Number(formData.economicScore),
+                politicalScore: Number(formData.politicalScore),
+                rating: formData.rating
+            },
+        });
+
+        revalidatePath('/country-scores');
+        revalidatePath('/');
+
+        return {success: true, data: updatedScore }
+
+    }catch(error){
+        console.error('Error updating country scores', error);
+        return { success: false, error: 'Failed to update country score' };
+    }    
+}
