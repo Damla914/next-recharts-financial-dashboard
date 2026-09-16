@@ -15,7 +15,7 @@ const Header = () => {
         return "Country Comparison"
       case '/ratings':
         return "Ratings"
-      case '/bank-ratio':
+      case '/bank-ratios':
         return "Bank Ratio"
       default:
         return "Dashboard"
@@ -27,7 +27,7 @@ const Header = () => {
       style={{
         padding: '15px 20px', 
         color: '#fff', 
-        backgroundColor: '#2b1651', 
+        backgroundColor: '#260b57', 
         display: 'flex', 
         gap: '15px', 
         justifyContent:'center', 

@@ -1,3 +1,4 @@
+import CreateScoreModal from "@/components/modals/createScoreModal";
 import { getAllCountryScores } from "@/lib/actions/countryScores";
 import Link from "next/link";
 
@@ -12,9 +13,7 @@ export default async function CountryScorePage(){
           <Link href = '/' className="text-sm text-sky-600 hover:text-sky-700 font-medium inline-flex items-center gap-1 mb-2">
             ← Back To Dashboard
           </Link>
-          <button className="px-4 py-2.5 bg-sky-600 opacity-60 cursor-not-allowed text-white text-sm font-semibold rounded-lg shadow-sm">
-             + Country Score
-          </button>
+          <CreateScoreModal />
         </div>
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
           <div className="overflow-x-auto">
