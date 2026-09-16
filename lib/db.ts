@@ -89,23 +89,23 @@ export async function getDashboardStats() {
   try {
     const latestCountryScores = await prisma.countryScore.findMany({
       orderBy: { year: 'desc' },
-      take: 4,
     });
     
     const latestBankRatio = await prisma.bankRatio.findFirst({
       orderBy: { year: 'desc' },
     });
 
-    // Ortalama Skor Hesaplama
     const avgScore = latestCountryScores.length > 0
       ? (latestCountryScores.reduce((acc, curr) => acc + curr.totalScore, 0) / latestCountryScores.length).toFixed(1)
       : '0';
+
+    const uniqueCountries = new Set(latestCountryScores.map((c) => c.countryName));
 
     return {
       averageRiskScore: avgScore,
       latestROA: latestBankRatio ? `%${latestBankRatio.roa}` : '%0',
       latestROE: latestBankRatio ? `%${latestBankRatio.roe}` : '%0',
-      totalCountries: latestCountryScores.length,
+      totalCountries: uniqueCountries.size,
     };
   } catch (error) {
     console.error('Error calculating dashboard stats:', error);
