@@ -14,7 +14,7 @@ export default function CreateScoreModal() {
         totalScore: '',
         economicScore: '',
         politicalScore: '',
-        rating: 'BB',
+        rating: 'BBB',
     });
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -41,7 +41,7 @@ export default function CreateScoreModal() {
                 totalScore: '',
                 economicScore: '',
                 politicalScore: '',
-                rating: 'BB',
+                rating: 'BBB',
             });
         } else {
             alert('Error Creating Record')
