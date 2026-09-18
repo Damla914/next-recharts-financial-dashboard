@@ -73,7 +73,6 @@ export async function getCountryComparison(){
                     [curr.countryCode]: curr.score,
                 });
             }
-
             return acc;
         }, [] as Record<string, any>[]);
         
