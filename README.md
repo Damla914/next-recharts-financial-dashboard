@@ -521,32 +521,6 @@ http://localhost:3000
 
 ---
 
-# 🧪 Quality Checks
-
-The project can be checked using the following commands.
-
-### TypeScript
-
-```bash
-npx tsc --noEmit
-```
-
-### ESLint
-
-```bash
-npm run lint
-```
-
-### Production Build
-
-```bash
-npm run build
-```
-
-All three checks should complete successfully before deployment or submission.
-
----
-
 # 🔮 Future Improvements
 
 The current project provides a database-backed analytics dashboard with CRUD functionality.
